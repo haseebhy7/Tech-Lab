@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Your meta tags and stylesheets -->
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+          <a href="index.html">Innovative Labs</a>
+        </div>
+        <div class="right-side">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="project.html">Projects</a>
+          <a href="blog.html">Blogs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    <section class="video-section">
+        <video autoplay loop muted>
+          <source src="/images/Contact.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-text">
+          <h1>Contact Us</h1>
+          <p>Fill the form below to get in touch with us</p>
+        </div>
+      </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>If you have any questions or inquiries, feel free to get in touch with us. We'd love to hear from you!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Innovative Street<br>Cityville, Techland</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 234 567 8901</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>contact@innovativelab.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- ... (previous HTML code) ... -->
+
+<div class="popup-container" id="popupContainer">
+  <div class="popup">
+    <p>Message sent successfully!</p>
+    <button onclick="hidePopup()">Close</button>
+  </div>
+</div>
+
+<!-- ... (remaining HTML code) ... -->
+
+  <footer>
+    <div class="social-icons">
+      <!-- Use Font Awesome icons for social media links -->
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div style="margin-top: 10px;">
+      &copy; 2023 Innovative Lab. All rights reserved. | <span style="font-size: 12px;">&trade;</span>
+    </div>
+  </footer>
+  <script>
+    const popupContainer = document.getElementById('popupContainer');
+    const form = document.querySelector('form');
+  
+    function showPopup() {
+      popupContainer.style.display = 'flex';
+    }
+  
+    function hidePopup() {
+      popupContainer.style.display = 'none';
+    }
+  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      showPopup();
+      form.reset();
+    });
+  </script>
+  
+</body>
+</html>

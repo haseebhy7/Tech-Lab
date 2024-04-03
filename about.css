@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+
+  }
+
+  nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+  }
+  nav {
+    position: fixed; /* Make the navigation bar sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    z-index: 1000; /* Ensure the navigation bar appears above other content */
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .left-side {
+    order: 1;
+    margin-left: 100px;
+  }
+  
+  .right-side {
+    order: 2;
+    border-bottom: 2px solid transparent; /* Set initial underline as transparent */
+    transition: border-color 10s ease; /* Add smooth transition to the underline */
+    margin-right: 150px;
+  }
+  .right-side a:hover {
+    border-bottom: 2px solid #42f5b1; /* Add blue underline on hover */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      order: initial;
+    }
+    .right-side {
+        margin: auto;    }
+    .left-side {
+        margin: auto;    }
+  }
+  @media only screen and (max-width: 661px) {
+    .right-side{
+        display: flex;
+        margin: auto;
+    }
+    .left-side{
+        display: flex;
+        margin: auto;
+    }
+}
+  @media only screen and (max-width: 300px) {
+    nav a {
+      font-size: 12px;
+      padding: 5px;
+    } 
+    .hero-content h1 {
+        font-size: 2rem;
+  }
+  }
+/* Define the hero section with the video background */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent overlay on top of the video */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+.hero-content h2 {
+    font-size: 2.6rem;
+  
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4a63;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d93850;
+}
+
+/* Styles for the "Meet Our Visionary Team" section */
+.team-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0);;
+   
+}
+.team-section h2{
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.team-member {
+    color: white;
+    flex: 1 0 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Scaling effect on hover */
+.team-member:hover {
+    transform: scale(1.05);
+}
+/* Styles for the "Meet Our Visionary Team" section */
+.team-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    flex: 1 0 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Improved box shadow */
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #918585;
+}
+
+/* Scaling effect on hover */
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+}
+
+.bg{
+    background-color: #666;
+}
+
+.partnership-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .partnership-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .sponsorship-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsorship-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Scaling effect on hover */
+  .sponsorship-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+.partnership-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .partnership-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ded5d5;
+  }
+  
+  .partnership-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .sponsorship-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsorship-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Scaling effect on hover */
+  .sponsorship-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      order: initial;
+    }
+    .right-side {
+        margin: auto;    }
+    .left-side {
+        margin: auto;    }
+  }
+  @media only screen and (max-width: 661px) {
+    .right-side{
+        display: flex;
+        margin: auto;
+    }
+    .left-side{
+        display: flex;
+        margin: auto;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    nav a {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .social-icons i {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 24px; /* Adjust the size of the icons */
+    transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+    cursor: pointer;
+  }
+
+  .social-icons .fab:hover {
+    transform: scale(1.2); /* Scale up by 20% on hover */
+  }

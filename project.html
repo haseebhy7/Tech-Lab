@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovative Lab - Upcoming Projects</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>  
+    <nav>
+    <div class="left-side">
+      <a href="index.html">Innovative Labs</a>
+    </div>
+    <div class="right-side">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Projects</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+    <div class="slider">
+        <div class="slide">
+          <img src="images/two.jpeg" alt="Project 1">
+          <div class="project-details">
+            <h3>Quantum Computing Revolution</h3>
+            <p>The Quantum Computing Revolution project aims to harness the power of quantum mechanics to revolutionize computing capabilities. Quantum computers utilize quantum bits or qubits, which can exist in multiple states simultaneously, enabling them to perform complex calculations at incredible speeds.
+
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/med.jpg" alt="Project 2">
+          <div class="project-details">
+            <h3>Virtual Reality Health Rehabilitation</h3>
+            <p>The Virtual Reality Health Rehabilitation project uses VR technology to revolutionize rehabilitation for patients with physical impairments. Immersive virtual environments provide an engaging approach to therapy. Personalized exercises enhance motor skills, balance, and coordination, leading to faster recovery.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/farm.webp" alt="Project 3">
+          <div class="project-details">
+            <h3>Smart Agriculture Monitoring System</h3>
+            <p>The Smart Agriculture Monitoring System optimizes farming with IoT devices and data analytics. Smart sensors monitor soil conditions, weather, crop health, and water usage. Real-time insights help farmers make informed decisions, increase crop yields, and promote sustainability.        </p>
+          </div>
+        </div>
+      </div>
+      <div class="down-arrow"></div>
+      <div class="more-projects">
+        <h2>More Upcoming Projects</h2>
+        <div class="project-box">
+          <img src="images/futuristic-g34da66114_1920.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>AI-Driven Personal Assistant</h3>
+            <p>The AI-Driven Personal Assistant project aims to create an intelligent virtual assistant powered by artificial intelligence. This assistant will be capable of understanding natural language, performing tasks, and providing personalized recommendations to users, making their daily lives more efficient and convenient.</p>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/bitcoin-gb85a5749d_1920.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Blockchain-based Supply Chain Management</h3>
+            <p>The Blockchain-based Supply Chain Management project focuses on leveraging blockchain technology to enhance transparency and traceability in supply chains. By securely recording transactions and data, this solution aims to improve efficiency, reduce fraud, and ensure ethical sourcing across various industries.</p>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images/technology-gb363cb47b_1920.jpg" alt="Project 3">
+          <div class="project-info">
+            <h3>Autonomous Drone Delivery System</h3>
+            <p>The Autonomous Drone Delivery System project envisions a futuristic delivery system using autonomous drones. These drones will be capable of delivering packages to customers' doorsteps quickly and efficiently, transforming the logistics and e-commerce industry.</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="social-icons">
+          <!-- Use Font Awesome icons for social media links -->
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div style="margin-top: 10px;">
+          &copy; 2023 Innovative Lab. All rights reserved. | <span style="font-size: 12px;">&trade;</span>
+        </div>
+      </footer>
+      
+      
+
+<script>const slides = document.querySelectorAll('.slide');
+
+    let currentSlide = 0;
+    slides[currentSlide].classList.add('active');
+    
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+    
+    setInterval(showNextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+    </script>
+</body>
+</html>

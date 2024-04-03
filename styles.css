@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+
+  }
+
+  nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .left-side {
+    order: 1;
+    margin-left: 100px;
+  }
+  
+  .right-side {
+    order: 2;
+    border-bottom: 2px solid transparent; /* Set initial underline as transparent */
+    transition: border-color 10s ease; /* Add smooth transition to the underline */
+    margin-right: 150px;
+  }
+  .right-side a:hover {
+    border-bottom: 2px solid #42f5b1; /* Add blue underline on hover */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      order: initial;
+    }
+    .right-side {
+        margin: auto;    }
+    .left-side {
+        margin: auto;    }
+  }
+  @media only screen and (max-width: 661px) {
+    .right-side{
+        display: flex;
+        margin: auto;
+    }
+    .left-side{
+        display: flex;
+        margin: auto;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    nav a {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  .hero-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #42f5b1;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #067651;
+  }
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind other content */
+  }
+  @media (min-width: 601px) {
+
+
+#menuBtn #menu{
+    display: none;
+}
+#menuBtn #menuImg{
+    display: none;
+}
+}
+.navbar-menu{
+    margin-left: 20px;
+}
+.navbar-menu ul{
+    margin-left: 520px;
+}
+
+/* RESPONSIVE WEBSITE */
+
+@media screen and (max-width: 600px) {
+   
+    
+   
+    #sideNav{
+        width: 180px;
+        height: 100vh;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        z-index: 3;
+        transition: 0.5s;
+        
+    }
+    
+    nav ul li{
+        list-style: none;
+        margin: 44px -12px -4px 41px;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+       
+    }
+    
+    #menuBtn{
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 4;
+        cursor: pointer;
+        color: white;
+    }
+    #menuBtn img{
+        width: 20px;
+        margin-top: 15px;
+        color:white;
+        
+    }
+    
+    #menuBtn{
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        text-align: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border-radius: 3px;
+        z-index: 4;
+        cursor: pointer;
+    }
+    .navbar-menu ul{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 40px;
+    }
+ 
+}
+

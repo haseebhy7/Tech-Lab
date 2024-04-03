@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Your meta tags and stylesheets -->
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+          <a href="index.html">Innovative Labs</a>
+        </div>
+        <div class="right-side">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="project.html">Projects</a>
+          <a href="#">Blogs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+  <!-- Blog Header -->
+  <header class="blog-header">
+    <div class="video-section">
+      <video autoplay loop muted>
+        <source src="images/coding.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">
+        <div class="video-text">
+          <h1>Blog</h1>
+          <p>Welcome to our blog! Explore the latest tech trends and updates.</p>
+          <a href="#blog-posts" class="scroll-down-arrow"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<!-- Blog Content -->
+<section class="blog-content">
+    <div class="blog-post">
+      <img src="images/healt.webp" alt="Blog Post 1">
+      <h2>The Power of AI in Healthcare</h2>
+      <p>Artificial Intelligence (AI) is transforming the healthcare industry, revolutionizing patient care, diagnosis, and treatment. AI-powered algorithms can analyze vast amounts of medical data, helping doctors make more accurate diagnoses and personalized treatment plans. Moreover, AI-driven medical devices are streamlining surgeries and procedures, reducing risks and improving outcomes. With AI's potential to enhance medical research and drug discovery, the future of healthcare looks promising.</p>
+      <div class="vote-buttons">
+        <button class="upvote-button"><i class="fas fa-thumbs-up"></i></button>
+        <button class="downvote-button"><i class="fas fa-thumbs-down"></i></button>
+      </div>
+    </div>
+      
+    <div class="blog-post">
+      <img src="images/charge.avif" alt="Blog Post 2">
+      <h2>The Future of Transportation: Electric Vehicles</h2>
+      <p>Electric Vehicles (EVs) are reshaping the automotive industry, leading the way towards a sustainable future. With advancements in battery technology, EVs offer longer ranges and faster charging times, making them more practical for everyday use. As countries promote eco-friendly initiatives, the adoption of EVs is expected to soar, reducing carbon emissions and combating climate change. From electric cars to e-bikes and scooters, electric transportation is driving the shift towards cleaner and greener mobility.</p>
+      <div class="vote-buttons">
+        <button class="upvote-button"><i class="fas fa-thumbs-up"></i></button>
+        <button class="downvote-button"><i class="fas fa-thumbs-down"></i></button>
+      </div>
+    </div>
+  </section>
+  
+  <div class="popup-container" id="popupContainer">
+    <div class="popup">
+      <p>Voted successfully!</p>
+      <button onclick="hidePopup()">Close</button>
+    </div>
+  </div>
+  
+  
+
+  <footer>
+    <div class="social-icons">
+      <!-- Use Font Awesome icons for social media links -->
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div style="margin-top: 10px;">
+      &copy; 2023 Innovative Lab. All rights reserved. | <span style="font-size: 12px;">&trade;</span>
+    </div>
+  </footer>
+  <script>
+     const upvoteButtons = document.querySelectorAll('.upvote-button');
+  const downvoteButtons = document.querySelectorAll('.downvote-button');
+  const popupContainer = document.getElementById('popupContainer');
+
+  function showPopup() {
+    popupContainer.style.display = 'flex';
+  }
+
+  function hidePopup() {
+    popupContainer.style.display = 'none';
+  }
+
+  upvoteButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      showPopup();
+    });
+  });
+
+  downvoteButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      showPopup();
+    });
+  });
+
+  </script>
+</body>
+</html>

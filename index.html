@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovative Tech Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="left-side">
+          <a href="index.html">Innovative Labs</a>
+        </div>
+        <div class="right-side">
+          <a href="about.html">About</a>
+          <a href="project.html">Projects</a>
+          <a href="blog.html">Blogs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2>Unleash the Power of Innovation</h2>
+      <p>Welcome to Innovatix Labs, where we turn visionary ideas into reality using cutting-edge technology.</p>
+      <a href="project.html" class="cta-button">Explore Projects</a>
+    </div>
+    <video autoplay muted loop id="video-background">
+        <source src="images/home.mp4" type="video/mp4">
+        <!-- Add additional video formats for cross-browser compatibility -->
+      </video> 
+      
+  </section>
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+var menuImg = document.getElementById("menuImg");
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function() {
+    if (sideNav.style.right === "-250px") {
+        sideNav.style.right = "0px";
+        menuImg.src = "images/close.png";
+    } else {
+        sideNav.style.right = "-250px";
+        menuImg.src = "images/menu.png";
+    }
+};
+  </script>
+</body>
+</html>
